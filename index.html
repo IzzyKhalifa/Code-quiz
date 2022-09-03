@@ -9,20 +9,78 @@
   <body>
     <header class="mainHead">
       <h2 href="#">View Scores</h2>
-      <h2 class="timer"> Time: 75</h2>
+      <h2 class="timer">Time: 75</h2>
     </header>
 
     <main>
-      <section class = 'container'>
-        <h1 class="question">Coding Quiz Challenge</h1>
-        
-        <h2 class="info">
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by ten seconds!
-        </h2>
-        <button class = 'startButton'>Start Quiz</button>
-    </section>
+      <section class="container">
+        <section id="p0" class="container">
+          <h1 class="question">Coding Quiz Challenge</h1>
+
+          <h2 class="info">
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+          </h2>
+          <button class="startButton">Start Quiz</button>
+        </section>
+
+        <section id="p1" class="container">
+          <h1 class="question">Commonly used data types do NOT include:</h1>
+          <div class="btn-group">
+            <button class="wrong">1. Strings</button>
+            <button class="wrong">2. Booleans</button>
+            <button class="right">3. Alerts</button>
+            <button class="wrong">4. Numbers</button>
+          </div>
+        </section>
+
+        <section id="p2" class="container">
+          <h1 class="question">
+            The condition in an if / else statment is enclosed with _______.
+          </h1>
+
+          <div class="btn-group">
+            <button class="wrong">1. Quotes</button>
+            <button class="right">2. Curly brackets</button>
+            <button class="wrong">3. Parenthesis</button>
+            <button class="wrong">4. Square brackets</button>
+          </div>
+        </section>
+
+        <section id="p3" class="container">
+          <h1 class="question">
+            Arrays in JavaScript can be used to store _______.
+          </h1>
+
+          <div class="btn-group">
+            <button class="wrong">1. Numbers and strings</button>
+            <button class="wrong">2. Other arrays</button>
+            <button class="wrong">3. Booleans</button>
+            <button class="right">4. All of the above</button>
+          </div>
+        </section>
+
+        <section id="p4" class="container">
+          <h1 class="question">
+            A very useful tool used during development and debugging for
+            printing content to the debugging is:
+          </h1>
+
+          <div class="btn-group">
+            <button class="wrong">1. JavaScript</button>
+            <button class="wrong">2. Terminal/Bash</button>
+            <button class="wrong">3. For loops</button>
+            <button class="right">4. console.log</button>
+          </div>
+        </section>
+        <section>
+          <h2 class="result"></h2>
+        </section>
+        <!-- <section id="p5" class="container">
+
+      </section> -->
+      </section>
     </main>
     <script src="./assets/js/script.js"></script>
   </body>
