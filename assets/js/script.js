@@ -1,4 +1,4 @@
-var questNumber = 1;
+var questNumber = 0;
 
 var timeLeft = 75;
 const timeEl = document.querySelector(".timer");
@@ -15,6 +15,7 @@ const submitButton = document.getElementById("submitButton");
 const clearButton = document.getElementById("clearScore");
 const backButton = document.getElementById("goBack");
 var nameList = document.getElementById("names");
+const viewScores = document.getElementById("viewScores");
 const finalScore = 0;
 
 var rButtons = document.querySelectorAll(".right");
@@ -39,18 +40,21 @@ backButton.addEventListener("click", goBack);
 
 function clearScore() {
   names.innerHTML = "";
+  localStorage.removeItem("highScores");
 }
 clearButton.addEventListener("click", clearScore);
 
 const maxScores = 5;
 
 function setHighScores(highScores) {
-  nameList.innerHTML = "";
-
+  names.innerHTML = "";
+  index = 1;
   highScores.forEach((score) => {
-    li = document.createElement("li");
-    li.innerHTML = score.timeLeft + " " + score.playerInitials;
-    nameList.appendChild(li);
+    ol = document.createElement("ol");
+    ol.innerHTML = index + ". " + score.playerInitials + " : " + score.timeLeft;
+    console.log(index);
+    nameList.appendChild(ol);
+    index++;
   });
 }
 
@@ -69,6 +73,15 @@ function sortingHighscores() {
   localStorage.setItem("highScores", JSON.stringify(highScores));
   setHighScores(highScores);
   console.log(highScores);
+}
+
+viewScores.addEventListener("click", displayHighScores);
+
+function displayHighScores() {
+  document.getElementById("p" + questNumber).style.display = "none";
+  console.log(questNumber);
+  document.getElementById("p6").style.display = "block";
+  result.style.display = "none";
 }
 
 function nextPage() {
