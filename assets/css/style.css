@@ -23,7 +23,7 @@ main {
   flex: 1 1 0;
   justify-content: center;
 }
-.result{
+.result {
   display: block;
   margin: 10px;
   font-size: 300%;
@@ -33,7 +33,6 @@ main {
   margin-top: 250px;
   color: dimgray;
   text-align: center;
-
 }
 .question {
   display: block;
@@ -89,8 +88,6 @@ main {
   margin: 5px;
 }
 
-
-
 .btn-group button:not(:last-child) {
   border-bottom: none;
 }
@@ -112,4 +109,43 @@ main {
 }
 #p4 {
   display: none;
+}
+#p5 {
+  display: none;
+  text-align-last: center;
+}
+#p5 h1{
+  font-size: 200%;
+}
+#p5 h3{
+  font-size: 150%;
+}
+#p6{
+  display: none;
+  text-align-last: center;
+}
+#p6 h1{
+  font-size: 200%;
+}
+#p6 button{
+  font-size: 70%;
+  border-radius: 25%;
+  padding: 10px 10px;
+}
+#p6 .btn-group{
+  display: inline-flex;
+}
+#submit{
+  display: inline-flex;
+}
+#names {
+  color: #fff;
+  background-color: rgb(0, 38, 255);
+  width: 15%;
+  border: 3px solid black;
+  font-size: 150%;
+}
+#highScores{
+  text-align: -webkit-center;
+  
 }

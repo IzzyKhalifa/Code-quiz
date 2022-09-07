@@ -77,9 +77,31 @@
         <section>
           <h2 class="result"></h2>
         </section>
-        <!-- <section id="p5" class="container">
-
-      </section> -->
+        <section id="p5" class="container">
+          <h1>All done!</h1>
+          <h3 id="score"></h3>
+          <div id="submit">
+            <h3>Enter initials:</h3>
+            <input
+              type="text"
+              id="initials"
+              name="initials"
+              placeholder="Enter your initials"
+              autocomplete="on"
+            />
+            <input type="submit" id="submitButton" value="Submit" />
+          </div>
+        </section>
+        <section id="p6" class="container">
+          <h1>High scores</h1>
+          <div id="highScores">
+            <ol id="names"></ol>
+          </div>
+          <div class="btn-group">
+            <button id="goBack">Go back</button>
+            <button id="clearScore">Clear high scores</button>
+          </div>
+        </section>
       </section>
     </main>
     <script src="./assets/js/script.js"></script>
